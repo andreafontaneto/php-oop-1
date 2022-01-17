@@ -39,12 +39,16 @@ var_dump($movie2);
   <h4>Anno: <?php echo $movie1->year ?></h4>
   <h4>Regista: <?php echo $movie1->director ?></h4>
   <h4>Durata: <?php echo $movie1->movie_time ?> min</h4>
+  <!-- VOTO AGGIUNTO TRAMITE METODO-->
+  <h4>Voto: <?php echo $movie1->getVote() ?></h4>
 
   <h1>Titolo: <?php echo $movie2->name ?></h1>
   <h3>Generi: <?php echo $movie2->genre ?></h3>
   <h4>Anno: <?php echo $movie2->year ?></h4>
   <h4>Regista: <?php echo $movie2->director ?></h4>
   <h4>Durata: <?php echo $movie2->movie_time ?> min</h4>
+  <!-- VOTO AGGIUNTO TRAMITE METODO-->
+  <h4>Voto: <?php echo $movie2->getVote() ?></h4>
   
 </body>
 </html>

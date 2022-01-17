@@ -13,4 +13,16 @@ class Movie{
     $this->name = $_name;
   }
 
+  public function getVote(){
+    $vote = 0;
+
+    if($this->movie_time > 100){
+      $vote = 3;
+    } else if($this->movie_time <= 90){
+      $vote = 8;
+    }
+
+    return $vote;
+  }
+
 }
