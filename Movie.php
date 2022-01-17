@@ -1,5 +1,6 @@
 <?php
 
+//setto la classe Movie con le sue proprietà (che ancora non esistono)
 class Movie{
 
   public $name;
@@ -8,9 +9,14 @@ class Movie{
   public $director;
   public $movie_time;
 
-  function __construct($_name)
+  // tramite __construct gli dico quali proprietà sono obbligatorie
+  function __construct($_name, $_genre, $_year, $_director, $_movie_time)
   {
     $this->name = $_name;
+    $this->genre = $_genre;
+    $this->year = $_year;
+    $this->director = $_director;
+    $this->movie_time = $_movie_time;
   }
 
   public function getVote(){
