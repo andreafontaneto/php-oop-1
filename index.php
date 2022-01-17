@@ -34,11 +34,17 @@ var_dump($movie2);
 </head>
 <body>
 
-  <h1>Titolo Film</h1>
-  <h3>Genere Film</h3>
-  <h4>Anno Film</h4>
-  <h4>Regista Film</h4>
-  <h4>Durata Film</h4>
+  <h1>Titolo: <?php echo $movie1->name ?></h1>
+  <h3>Generi: <?php echo $movie1->genre ?></h3>
+  <h4>Anno: <?php echo $movie1->year ?></h4>
+  <h4>Regista: <?php echo $movie1->director ?></h4>
+  <h4>Durata: <?php echo $movie1->movie_time ?> min</h4>
+
+  <h1>Titolo: <?php echo $movie2->name ?></h1>
+  <h3>Generi: <?php echo $movie2->genre ?></h3>
+  <h4>Anno: <?php echo $movie2->year ?></h4>
+  <h4>Regista: <?php echo $movie2->director ?></h4>
+  <h4>Durata: <?php echo $movie2->movie_time ?> min</h4>
   
 </body>
 </html>
