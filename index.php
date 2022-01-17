@@ -1,6 +1,13 @@
 <?php
 
-// class Movie
+class Movie{
+
+  public $name;
+  public $genre;
+  public $director;
+  public $movie_time;
+
+}
 
 ?>
 
